@@ -2,12 +2,15 @@
 
 This project implements an Agentic RAG (Retrieval-Augmented Generation) chatbot using CrewAI, Chonkie, and DeepEval. This project is an extension of the template given by CrewAI, and serves to integrate RAG with CrewAI.
 
-## Features
+## Initial Thoughts
+This was my first time implementing an Agentic RAG chatbot, and also my first time using any of the frameworks. Initial, this project was very daunting to me and I didn't know where to start. However, as I looked through the given documentation I felt I had a general direction. I broke this project into four main steps:
 
-- **Agentic Behavior**: Uses CrewAI to manage dynamic tasks with specialized agents
-- **Semantic Chunking**: Uses Chonkie to partition documents into optimally sized chunks
-- **Vector Database**: Uses Qdrant for efficient vector storage and retrieval
-- **Evaluation**: Uses DeepEval for comprehensive RAG evaluation metrics
+- **Chunking with Chonkie**: Processing and chunking data is the core of RAG so getting this operational was first.
+- **Qdrant Vector Database**: Setting up the vector database with Qdrant and testing the similarity score so that it adequately matches the queries.
+- **CrewAI Framework**: Get a basic agent framework running and have it use the data fed from Qdrant
+- **DeepEval Evaluation**: To test RAG metrics
+
+I was able to set up Chonkie and Qdrant up relatively easily, but I am currently roadblocked with integrating it with CrewAI. Unfortunately this is still not functionally and I hope to get this fixed soon.
 
 ## Setup
 
@@ -157,12 +160,12 @@ crewai_demo/
 │   └── chunks.json       # Processed chunks
 ├── src/
 │   ├── crewai_demo/
-│   │   ├── config/       # CrewAI configurations
-│   │   ├── tools/        # RAG implementation
+│   │   ├── config/       # CrewAI configurations (agents.yaml & tasks.yaml)
+│   │   ├── tools/        # RAG implementation (Chonkie and Qdrant)
 │   │   ├── deepeval/     # Evaluation metrics
 │   │   ├── crew.py       # CrewAI setup
 │   │   └── main.py       # Main application
-├── tests/                # Test modules
+├── tests/                # Test modules (I can provide my test files if desired)
 └── requirements.txt      # Dependencies
 ```
 
@@ -175,4 +178,4 @@ crewai_demo/
 
 ## Final Thoughts
 
-This project was a wonderful introduction to RAG and agentic AI. Personally, this was my first time using any of these frameworks so being able to get hands on experience and actually getting an understanding of how RAG functions and how it can be used with AI was very insightful. In the future I hope to get this program fully functional and possibly expand on its features.
+This project was a wonderful introduction to RAG and agentic AI. Personally, this was my first time using any of these frameworks so being able to get hands on experience and actually getting an understanding of how RAG functions and how it can be used with AI was very insightful. This project has further ignited my passion for AI and I hope that I can work on projects similar to this again in the future.

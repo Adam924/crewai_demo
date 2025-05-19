@@ -1,0 +1,19 @@
+research_task:
+  description: "Research information about {topic}. If a specific query is provided: {query}, focus on that."
+  agent: "researcher"
+  expected_output: "Comprehensive research about the topic"
+  context_text:
+    - "Topic: {topic}"
+    - "Query: {query}"
+    - "Retrieved Information: {retrieval_context}"
+
+reporting_task:
+  description: "Create a comprehensive report about {topic}. If a specific query was researched: {query}, focus on that."
+  agent: "reporting_analyst"
+  expected_output: "A detailed report summarizing the research"
+  context_text:
+    - "Topic: {topic}" 
+    - "Query: {query}"
+    - "Research: {research_task.output}"
+  dependencies:
+    - "research_task"

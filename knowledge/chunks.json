@@ -1,0 +1,72 @@
+[
+  {
+    "text": "\ufeffObjective: Candidates will develop a Retrieval-Augmented Generation (RAG) chatbot capable of \u201cagentic\u201d behavior. The chatbot should leverage Crew AI (or similar agent framework) to handle agentic tasks and incorporate Chonkie for chunking source documents. The solution must also include an evaluation step using DeepEval or a comparable framework to measure retrieval and generation performance.",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 0
+    }
+  },
+  {
+    "text": " Deadline: You have 66 hours from receiving this message to submit a link to a GitHub repository containing your full solution. Any code commits beyond this time will not be considered. A non-compiling solution does not necessarily disqualify you\u2014clear explanations of your design and problem-solving approach are highly valuable.",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 1
+    }
+  },
+  {
+    "text": " Getting Started: Feel free to explore existing tutorials, guides, or code snippets on agentic RAG, Crew AI, Chonkie, and DeepEval. Your solution will be assessed on design clarity, rationale, and documentation as much as on functionality. In particular, detailing why and how you employ Chonkie, DeepEval, and other tools is highly recommended.Evaluation Criteria",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 2
+    }
+  },
+  {
+    "text": " 1. End-to-End RAG Chatbot \u2022 Agentic Behavior: Demonstrate how your choice of agent framework is integrated to manage dynamic tasks (e.g., deciding whether to retrieve more context, refine the prompt, or request clarifications).",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 3
+    }
+  },
+  {
+    "text": " \u2022 Chunking Implementation: Use Chonkie to partition documents into optimally sized chunks. Clearly document your chunking strategy and explain its impact on retrieval (use some advance semantic chunking for bonus points).",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 4
+    }
+  },
+  {
+    "text": " \u2022 Architecture: Choose a vector database (e.g., Qdrant, Milvus, Pinecone), agent framework, and evaluation tool that best suit your project. Provide reasoning behind each choice and how you integrated them, highlighting factors such as scalability, ease of setup, or unique features.",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 5
+    }
+  },
+  {
+    "text": " 2. RAG Evaluation with DeepEval (or Similar) Your assessment should show both retrieval and generation quality:",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 6
+    }
+  },
+  {
+    "text": " 1. Context Retrieval o Contextual Precision: How often the system retrieves highly relevant chunks. o Contextual Recall: Ensures that the system captures all necessary context from the database. o Contextual Relevancy: Measures how closely the returned context aligns with the user query.",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 7
+    }
+  },
+  {
+    "text": " 2. Content Generation o Answer Relevancy: Checks if the chatbot\u2019s generated response truly addresses user inquiries. o Faithfulness: Confirms the response remains grounded in the retrieved context, avoiding extraneous or false details.",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 8
+    }
+  },
+  {
+    "text": " You are welcome to add extra metrics or methods for evaluation if they offer additional insights (e.g., side-by-side comparisons, user testing).",
+    "metadata": {
+      "source": "knowledge/docs/agentic_chatbot_documentation.txt",
+      "chunk_index": 9
+    }
+  }
+]
